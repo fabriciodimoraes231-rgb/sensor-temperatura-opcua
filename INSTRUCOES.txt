@@ -1,0 +1,79 @@
+🎯 SISTEMA DE TEMPERATURA OPC UA - INSTRUÇÕES DE USO
+============================================================
+
+✅ O sistema foi criado com sucesso em: /tmp/sensor_temperatura_opcua
+
+📁 ARQUIVOS CRIADOS:
+├── main.py              # Script principal (interface de comando)
+├── servidor_opcua.py    # Servidor OPC UA que simula sensor
+├── cliente_opcua.py     # Cliente OPC UA para coleta de dados  
+├── visualizador.py      # Interface gráfica em tempo real
+├── demo.py              # Demonstração rápida no terminal
+├── requirements.txt     # Dependências Python
+└── README.md           # Documentação completa
+
+🚀 COMO EXECUTAR:
+
+1️⃣ DEMONSTRAÇÃO RÁPIDA (Terminal):
+   cd /tmp/sensor_temperatura_opcua
+   python3 demo.py
+   
+   ↳ Mostra dados do sensor direto no terminal
+   ↳ Pressione Ctrl+C para parar
+
+2️⃣ SISTEMA COMPLETO (Gráfico):  
+   cd /tmp/sensor_temperatura_opcua
+   python3 main.py completo
+   
+   ↳ Inicia servidor + visualizador gráfico
+   ↳ Abre janela com 4 gráficos em tempo real
+   ↳ Feche a janela para parar
+
+3️⃣ COMPONENTES SEPARADOS:
+   # Terminal 1 - Servidor
+   python3 main.py servidor
+   
+   # Terminal 2 - Cliente (dados no terminal)
+   python3 main.py cliente
+   
+   # Terminal 3 - Visualizador gráfico
+   python3 main.py visualizador
+
+4️⃣ VERIFICAR STATUS:
+   python3 main.py status
+
+🌡️ CARACTERÍSTICAS DO SENSOR:
+• Temperatura base: 22°C ± 8°C (variação diária simulada)
+• Ruído natural: ±0.5°C (flutuações realísticas)
+• Faixa operacional: 10°C a 40°C
+• Frequência: 1 leitura por segundo
+• Protocolo: OPC UA (opc.tcp://localhost:4840/sensor/temperatura)
+
+📊 VISUALIZAÇÕES DISPONÍVEIS:
+• Gráfico em tempo real (últimos 60 pontos)
+• Histórico completo (últimas 300 leituras = 5 minutos)
+• Distribuição estatística (histograma)
+• Painel de estatísticas (média, min, max, status)
+• Zona de conforto térmico destacada (20-26°C)
+
+🔧 VARIÁVEIS OPC UA EXPOSTAS:
+• SensorTemperatura/Temperatura → Valor atual (Float)
+• SensorTemperatura/Timestamp → Hora da leitura (String)
+• SensorTemperatura/Status → Status do sensor (String)
+• SensorTemperatura/Unidade → "°C" (String)
+• SensorTemperatura/Configuracao/* → Parâmetros do sensor
+
+💡 DICAS:
+• Para parar qualquer componente: Ctrl+C
+• Zona verde no gráfico = conforto térmico (20-26°C)
+• Dados são mantidos apenas em memória
+• Sistema funciona localmente (localhost)
+• Use requirements.txt para instalar dependências
+
+📚 DOCUMENTAÇÃO COMPLETA:
+   cat README.md
+
+🎮 TESTE RÁPIDO AGORA:
+   cd /tmp/sensor_temperatura_opcua && python3 demo.py
+
+Aproveite o sistema de monitoramento de temperatura via OPC UA! 🎉
