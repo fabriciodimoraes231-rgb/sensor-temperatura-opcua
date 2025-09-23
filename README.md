@@ -2,7 +2,7 @@
 
 Este projeto implementa um sistema completo de simulação e monitoramento de sensor de temperatura ambiente usando o protocolo OPC UA (Open Platform Communications Unified Architecture).
 
-## 🎯 Características
+## Características
 
 - **Servidor OPC UA**: Simula um sensor de temperatura com variações realísticas
 - **Cliente OPC UA**: Conecta ao servidor e coleta dados em tempo real
@@ -10,7 +10,7 @@ Este projeto implementa um sistema completo de simulação e monitoramento de se
 - **Dados Realísticos**: Simula variações diárias, ruído e tendências de temperatura
 - **Protocolo Padrão**: Usa OPC UA para comunicação industrial padrão
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 sensor_temperatura_opcua/
@@ -22,7 +22,7 @@ sensor_temperatura_opcua/
 └── README.md           # Esta documentação
 ```
 
-## 🚀 Instalação
+## Instalação
 
 ### 1. Clonar/Baixar o Projeto
 ```bash
@@ -43,7 +43,7 @@ pip install -r requirements.txt
 python main.py status
 ```
 
-## 🎮 Como Usar
+## Como Usar
 
 ### Opção 1: Sistema Completo (Recomendado)
 ```bash
@@ -80,7 +80,7 @@ python main.py status
 python main.py --help
 ```
 
-## 📊 Interface Gráfica
+## Interface Gráfica
 
 O visualizador mostra 4 gráficos simultâneos:
 
@@ -95,7 +95,7 @@ O visualizador mostra 4 gráficos simultâneos:
 - Classificação qualitativa da temperatura
 - Atualização em tempo real (1 segundo)
 
-## 🌡️ Características do Sensor Simulado
+## Características do Sensor Simulado
 
 ### Modelo de Temperatura
 - **Temperatura Base**: 22°C
@@ -119,7 +119,7 @@ Onde:
 - **Histórico**: Últimas 300 leituras (5 minutos)
 - **Persistência**: Apenas em memória
 
-## 🔧 Configuração OPC UA
+## Configuração OPC UA
 
 ### Servidor
 - **Endpoint**: `opc.tcp://localhost:4840/sensor/temperatura`
@@ -140,7 +140,7 @@ Objects/
         └── Precisao (Float)     # 0.1°C
 ```
 
-## 🛠️ Desenvolvimento
+## Desenvolvimento
 
 ### Requisitos
 - Python 3.6+
@@ -233,7 +233,7 @@ pip install tkinter
 - Simular ambiente industrial
 - Apresentações técnicas
 
-## 🔒 Limitações
+## Limitações
 
 ### Segurança
 - **Desenvolvimento apenas**: Sem autenticação/criptografia
@@ -250,34 +250,8 @@ pip install tkinter
 - **Configuração**: Parâmetros fixos no código
 - **Múltiplos sensores**: Apenas um sensor simulado
 
-## 🚀 Melhorias Futuras
 
-### Funcionalidades
-- [ ] Múltiplos sensores (temperatura, umidade, pressão)
-- [ ] Configuração via arquivo JSON/YAML
-- [ ] Histórico persistente em banco de dados
-- [ ] API REST complementar
-- [ ] Alertas configuráveis
-
-### Interface
-- [ ] Dashboard web (Flask/Django)
-- [ ] Configuração gráfica dos parâmetros
-- [ ] Exportação de dados (CSV, Excel)
-- [ ] Relatórios automáticos
-
-### Segurança
-- [ ] Autenticação de usuários
-- [ ] Certificados X.509
-- [ ] Criptografia de comunicação
-- [ ] Logs de auditoria
-
-### Performance
-- [ ] Otimização da renderização gráfica
-- [ ] Compressão de dados históricos
-- [ ] Cache inteligente
-- [ ] Suporte a múltiplos clientes
-
-## 📞 Suporte
+##  Suporte
 
 ### Logs
 Os componentes geram logs no terminal. Para debug:
@@ -290,11 +264,3 @@ python main.py servidor 2>&1 | tee servidor.log
 2. **Permissões**: Execute como administrador se necessário  
 3. **Dependências**: Reinstale requirements.txt
 
-### Contato
-- Abra issues no repositório
-- Consulte documentação OPC UA
-- Verifique versões das dependências
-
----
-
-**Desenvolvido com Python e OPC UA** 🐍🏭
