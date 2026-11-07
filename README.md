@@ -264,3 +264,7 @@ python main.py servidor 2>&1 | tee servidor.log
 2. **Permissões**: Execute como administrador se necessário  
 3. **Dependências**: Reinstale requirements.txt
 
+
+## Licença
+
+[Apache 2.0](LICENSE) © Manuel Moraes
